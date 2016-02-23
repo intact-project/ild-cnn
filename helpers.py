@@ -5,7 +5,7 @@ This is a part of the supplementary material uploaded along with the manuscript:
     M. Anthimopoulos, S. Christodoulidis, L. Ebner, A. Christe and S. Mougiakakou
     IEEE Transactions on Medical Imaging (2016)
 
-For more information please read the README file. The files can also be found at: http://github.com/
+For more information please read the README.md file.
 '''
 
 import argparse
