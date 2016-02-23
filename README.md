@@ -3,7 +3,9 @@ This is supplementary material for the manuscript:
 
 >"Lung Pattern Classification for Interstitial Lung Diseases Using a Deep Convolutional Neural Network"  
 M. Anthimopoulos, S. Christodoulidis, L. Ebner, A. Christe and S. Mougiakakou  
-IEEE Transactions on Medical Imaging (2016)
+IEEE Transactions on Medical Imaging (2016)  
+
+In case of any questions, please do not hesitate to contact us.
 
 ### Environment:
 We used this code on a Linux machine with Ubuntu (14.04.3 LTS) using the following setup:  
@@ -24,5 +26,5 @@ There are three major components
 - `cnn_model.py`  : this file implements the architecture of the proposed CNN and trains it.
 
 ### How to use:
-`python main.py` [run with the default parameters]  
-`python main.py -h` [for help]
+`python main.py` : runs an experiment with the default parameters  
+`python main.py -h` : shows the help message
