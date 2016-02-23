@@ -6,10 +6,10 @@ M. Anthimopoulos, S. Christodoulidis, L. Ebner, A. Christe and S. Mougiakakou
 IEEE Transactions on Medical Imaging (2016)
 
 ### Environment:
-We used these code on a Linux machine with Ubuntu (14.04.3 LTS) using the following setup:  
+We used this code on a Linux machine with Ubuntu (14.04.3 LTS) using the following setup:  
 - CUDA (7.5)
 - cuDNN (v3)
-- python (2.7.6)
+- python (2.7.6) with  
   * theano (0.8)
   * keras (0.3.2)
   * numpy (1.10.4)
