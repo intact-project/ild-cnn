@@ -17,8 +17,12 @@ We used these code on a Linux machine with Ubuntu (14.04.3 LTS) using the follow
   * sklearn (0.17)
 - python-opencv (2.4.10)
 
-### Major Component Description:
+### Component Description:
 There are three major components
 - `main.py`      : the main script which parses the train parameters, loads some sample data and runs the training of the CNN.
 - `helpers.py`    : a file with some helper functions for parsing the input parameters, loading sample data and calculating a number of evaluation metrics
 - `cnn_model.py`  : this file implements the architecture of the proposed CNN and trains it.
+
+### How to use:
+`python main.py` [run with the default parameters]  
+`python main.py -h` [for help]
