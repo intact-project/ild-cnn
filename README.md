@@ -29,6 +29,9 @@ There are three major components
 `python main.py` : runs an experiment with the default parameters  
 `python main.py -h` : shows the help message
 
+### Output Description:
+The execution outputs two csv formatted files with the performance metrics of the CNN. The first contains the performances for each training epoch while the second only for the epochs that improved the performance. The code prints the same output while running as well as a confusion matrix every time the CNN performance improves.
+
 ### Disclaimer
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
