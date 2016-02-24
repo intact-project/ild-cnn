@@ -8,7 +8,7 @@ IEEE Transactions on Medical Imaging (2016)
 In case of any questions, please do not hesitate to contact us.
 
 ### Environment:
-We used this code on a Linux machine with Ubuntu (14.04.3 LTS) using the following setup:  
+This code was used on a Linux machine with Ubuntu (14.04.3 LTS) using the following setup:  
 - CUDA (7.5)
 - cuDNN (v3)
 - python (2.7.6) with  
