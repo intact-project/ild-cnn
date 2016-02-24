@@ -32,7 +32,7 @@ There are three major components
 ### Output Description:
 The execution outputs two csv formatted files with the performance metrics of the CNN. The first contains the performances for each training epoch while the second only for the epochs that improved the performance. The code prints the same output while running as well as a confusion matrix every time the CNN performance improves.
 
-### Disclaimer
+### Disclaimer:
 Copyright (C) 2016  Marios Anthimopoulos, Stergios Christodoulidis, Stavroula Mougiakakou / University of Bern  
 
 
