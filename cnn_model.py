@@ -1,11 +1,26 @@
 '''
-This is a part of the supplementary material uploaded along with the manuscript:
+This is a part of the supplementary material uploaded along with 
+the manuscript:
 
     "Lung Pattern Classification for Interstitial Lung Diseases Using a Deep Convolutional Neural Network"
     M. Anthimopoulos, S. Christodoulidis, L. Ebner, A. Christe and S. Mougiakakou
     IEEE Transactions on Medical Imaging (2016)
 
-For more information please read the README.md file.
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+For more information please read the README file. The files can also 
+be found at: https://github.com/intact-project/ild-cnn
 '''
 
 import sys
@@ -163,5 +178,4 @@ def train(x_train, y_train, x_val, y_val, params):
     print('Max: fscore:', maxf, 'acc:', maxacc, 'epoch: ', maxit, 'train loss: ', maxtrainloss, 'validation loss: ', maxvaloss)
 
     return best_model
-
 
