@@ -12,11 +12,11 @@ This code was used on a Linux machine with Ubuntu (14.04.3 LTS) using the follow
 - CUDA (7.5)
 - cuDNN (v3)
 - python (2.7.6) with  
-  * theano (0.8)
-  * keras (0.3.2)
-  * numpy (1.10.4)
-  * argparse (1.2.1)
-  * sklearn (0.17)
+  * [Theano](https://github.com/Theano/Theano) (0.8)
+  * [keras](https://github.com/fchollet/keras) (0.3.2)
+  * [numpy](https://github.com/numpy/numpy) (1.10.4)
+  * [argparse](https://github.com/bewest/argparse) (1.2.1)
+  * [scikit-learn](https://github.com/scikit-learn/scikit-learn) (0.17)
 - python-opencv (2.4.10)
 
 ### Component Description:
