@@ -5,6 +5,7 @@ the manuscript:
     "Lung Pattern Classification for Interstitial Lung Diseases Using a Deep Convolutional Neural Network"
     M. Anthimopoulos, S. Christodoulidis, L. Ebner, A. Christe and S. Mougiakakou
     IEEE Transactions on Medical Imaging (2016)
+    http://dx.doi.org/10.1109/TMI.2016.2535865
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
