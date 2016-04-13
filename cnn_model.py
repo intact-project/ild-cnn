@@ -62,10 +62,12 @@ def get_model(input_shape, output_shape, params):
     model = Sequential()
 
     # Add convolutional layers to model
-    model.add(Convolution2D(params['k']*get_FeatureMaps(1, params['fp']), 2, 2, init='orthogonal', activation=LeakyReLU(params['a']), input_shape=input_shape[1:]))
+    model.add(Convolution2D(params['k']*get_FeatureMaps(1, params['fp']), 2, 2, init='orthogonal', input_shape=input_shape[1:]))
+    model.add(LeakyReLU(params['a']))
     for i in range(2, params['cl']+1):
-        model.add(Convolution2D(params['k']*get_FeatureMaps(i, params['fp']), 2, 2, init='orthogonal', activation=LeakyReLU(params['a'])))
-
+        model.add(Convolution2D(params['k']*get_FeatureMaps(i, params['fp']), 2, 2, init='orthogonal'))
+        model.add(LeakyReLU(params['a']))
+        
     # Add Pooling and Flatten layers to model
     if params['pt'] == 'Avg':
         model.add(AveragePooling2D(pool_size=pool_siz))
@@ -77,9 +79,11 @@ def get_model(input_shape, output_shape, params):
     model.add(Dropout(params['do']))
 
     # Add Dense layers and Output to model
-    model.add(Dense(int(params['k']*get_FeatureMaps(params['cl'], params['fp']))/params['pf']*6, init='he_uniform', activation=LeakyReLU(0)))
+    model.add(Dense(int(params['k']*get_FeatureMaps(params['cl'], params['fp']))/params['pf']*6, init='he_uniform'))
+    model.add(LeakyReLU(0))
     model.add(Dropout(params['do']))
-    model.add(Dense(int(params['k']*get_FeatureMaps(params['cl'], params['fp']))/params['pf']*2, init='he_uniform', activation=LeakyReLU(0)))
+    model.add(Dense(int(params['k']*get_FeatureMaps(params['cl'], params['fp']))/params['pf']*2, init='he_uniform'))
+    model.add(LeakyReLU(0))
     model.add(Dropout(params['do']))
     model.add(Dense(output_shape[1], init='he_uniform', activation='softmax'))
 
